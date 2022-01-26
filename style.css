@@ -1,10 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: seashell;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(77, 77, 77);
+    background-color: #d2eeff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(44, 89, 148);
 }
 
 img {
     width: 300px;
     height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-image: url("http://source.unsplash.com/yUkcmOU07CQ");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+footer {
+    padding: 50px;
+}
+
+main {
+    padding: 50px 100px;
+}
+
+.info_element {
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
