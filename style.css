@@ -1,0 +1,10 @@
+body {
+    background-color: seashell;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(77, 77, 77);
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
