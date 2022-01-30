@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: #d2eeff;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(44, 89, 148);
+    font-family: "Work Sans", sans-serif;
+    /* color: rgb(44, 89, 148); */
+    color: #005d74;
 }
 
 img {
@@ -19,37 +19,50 @@ img {
 }
 
 header {
-    background-image: url("http://source.unsplash.com/yUkcmOU07CQ");
+    background-image: url("http://source.unsplash.com/diMcFfY-zcc");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    padding: 100px;
+    text-align: center;
 }
 
 header ul li {
     display: inline-block;
+    padding: 15px;
 }
 
-footer {
-    padding: 50px;
-}
-
-main {
-    padding: 50px 100px;
-}
-
-.info_element {
-    padding: 20px;
-}
-
-h1 {
+header h1 {
     color: white;
     font-size: 70px;
 }
 
-h2 {
+.header-top {
+    padding: 40px;
+}
+
+.header-bottom {
+    padding-bottom: 150px;
+    padding-top: 80px;
+}
+
+main h2 {
     padding-bottom: 20px;
+}
+
+footer {
+    padding: 50px;
+    background-color: #ffdfd7;
+    text-align: center;
+}
+
+.info_element {
+    padding: 50px 50px;
+    background-color: #ffe9e1;
+}
+
+.info_element:nth-child(2) {
+    background-color: #ffdfd7;
 }
 
 a {
