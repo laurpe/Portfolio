@@ -8,8 +8,10 @@
     --text-color: #504f6b;
     --text-shadow: #67668a;
     --link-color: white;
+    --button-color: #04c4d9;
     --bg-color-light: #fff1ec87;
     --bg-color-dark: #ffece7;
+    --bg-color-footer: #2d3435;
 }
 
 body {
@@ -62,12 +64,6 @@ main h2 {
     padding-bottom: 20px;
 }
 
-footer {
-    padding: 50px;
-    background-color: var(--bg-color-dark);
-    text-align: center;
-}
-
 .info_element {
     padding: 50px 50px;
     background-color: var(--bg-color-light);
@@ -85,4 +81,54 @@ a {
     color: var(--link-color);
     text-decoration: none;
     text-shadow: 1px 1px var(--text-shadow);
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    width: 100%;
+    padding: 15px 0 3px 0;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 15px 0 3px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--link-color);
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contact-form h2 {
+    padding: 25px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--bg-color-footer);
+    color: var(--bg-color-light);
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
 }
