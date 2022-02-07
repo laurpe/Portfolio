@@ -5,18 +5,18 @@
 }
 
 :root {
-    --text-color: #504f6b;
-    --text-shadow: #67668a;
-    --link-color: white;
-    --button-color: #04c4d9;
-    --bg-color-light: #fff1ec87;
-    --bg-color-dark: #ffece7;
+    --text-dark: #001808;
+    --text-light: white;
+    --button-color: #038c31;
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #f3f3f3;
     --bg-color-footer: #2d3435;
 }
 
 body {
     font-family: "Work Sans", sans-serif;
-    color: var(--text-color);
+    font-weight: 200;
+    color: var(--text-dark);
 }
 
 img {
@@ -26,9 +26,16 @@ img {
     margin-right: 20px;
     margin-bottom: 10px;
 }
+/*
+blue: BOjF5QEZe-Y 
+green bokeh: 6XUA5KQ9-1k
+green paint: gkKI23ZeaHM
+saniainen: uvMYpVdiqlU
+kirkas vihreä ruoho: LmyPLbbUWhA
+*/
 
 header {
-    background-image: url("http://source.unsplash.com/diMcFfY-zcc");
+    background-image: url("http://source.unsplash.com/1zishMOGHao");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -42,13 +49,18 @@ header ul li {
 }
 
 header h1 {
-    color: var(--text-color);
+    color: var(--text-light);
     font-size: 70px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 header h2 {
-    color: var(--text-color);
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 .header-top {
@@ -56,7 +68,7 @@ header h2 {
 }
 
 .header-bottom {
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     padding-top: 80px;
 }
 
@@ -78,9 +90,8 @@ main h2 {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--text-light);
     text-decoration: none;
-    text-shadow: 1px 1px var(--text-shadow);
 }
 
 form {
@@ -91,25 +102,34 @@ form {
 label {
     display: block;
     width: 100%;
-    padding: 15px 0 3px 0;
+    padding: 20px 0 5px 0;
 }
 
 input,
 textarea {
     display: block;
     width: 100%;
-    padding: 15px 0 3px 0;
+    padding: 10px;
     border: none;
     border-radius: 3px;
+    font-family: inherit;
+    font-weight: 200;
+    color: var(--text-dark);
 }
 
 textarea {
     height: 150px;
 }
 
+input:focus,
+textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px #baffd1;
+}
+
 button {
     background-color: var(--button-color);
-    color: var(--link-color);
+    color: var(--text-light);
     padding: 15px;
     margin: 20px 0;
     border: none;
