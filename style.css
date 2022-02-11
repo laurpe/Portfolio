@@ -26,13 +26,6 @@ img {
     margin-right: 20px;
     margin-bottom: 10px;
 }
-/*
-blue: BOjF5QEZe-Y 
-green bokeh: 6XUA5KQ9-1k
-green paint: gkKI23ZeaHM
-saniainen: uvMYpVdiqlU
-kirkas vihreä ruoho: LmyPLbbUWhA
-*/
 
 header {
     background-image: url("http://source.unsplash.com/1zishMOGHao");
@@ -40,12 +33,31 @@ header {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    text-align: center;
+    padding: 30px;
 }
 
-header ul li {
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom {
+    text-align: center;
+    padding: 120px;
+}
+
+.logo {
+    padding: 30px;
+}
+
+nav ul li {
     display: inline-block;
-    padding: 15px;
+    padding: 30px;
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: none;
 }
 
 header h1 {
@@ -59,22 +71,12 @@ header h2 {
     font-weight: 400;
 }
 
-h2 {
-    font-weight: 400;
-}
-
-.header-top {
-    padding: 40px;
-}
-
-.header-bottom {
-    padding-bottom: 200px;
-    padding-top: 80px;
-}
-
 main h2 {
+    font-weight: 400;
     padding-bottom: 20px;
 }
+
+/*
 
 .info_element {
     padding: 50px 50px;
@@ -89,10 +91,7 @@ main h2 {
     float: right;
 }
 
-a {
-    color: var(--text-light);
-    text-decoration: none;
-}
+
 
 form {
     width: 40%;
@@ -151,4 +150,4 @@ footer {
 .copyright {
     padding: 20px;
     text-align: center;
-}
+} */
