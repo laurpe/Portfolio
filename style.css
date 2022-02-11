@@ -19,14 +19,6 @@ body {
     color: var(--text-dark);
 }
 
-img {
-    width: 300px;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
 header {
     background-image: url("http://source.unsplash.com/1zishMOGHao");
     background-repeat: no-repeat;
@@ -62,7 +54,7 @@ a {
 
 header h1 {
     color: var(--text-light);
-    font-size: 70px;
+    font-size: 4.5rem;
     font-weight: 400;
 }
 
@@ -76,7 +68,48 @@ main h2 {
     padding-bottom: 20px;
 }
 
-/*
+.projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.project a {
+    color: var(--button-color);
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+em {
+    display: block;
+    padding: 15px 0;
+}
+
+section img {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
 
 .info_element {
     padding: 50px 50px;
@@ -90,6 +123,10 @@ main h2 {
 .info_element:nth-child(2) img {
     float: right;
 }
+
+/*
+
+
 
 
 
