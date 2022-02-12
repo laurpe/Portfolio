@@ -17,7 +17,10 @@ body {
     font-family: "Work Sans", sans-serif;
     font-weight: 200;
     color: var(--text-dark);
+    background-color: var(--bg-color-dark);
 }
+
+/* Header */
 
 header {
     background-image: url("http://source.unsplash.com/1zishMOGHao");
@@ -47,7 +50,7 @@ nav ul li {
     padding: 30px;
 }
 
-a {
+header a {
     color: var(--text-light);
     text-decoration: none;
 }
@@ -63,10 +66,7 @@ header h2 {
     font-weight: 400;
 }
 
-main h2 {
-    font-weight: 400;
-    padding-bottom: 20px;
-}
+/* Projects */
 
 .projects {
     display: flex;
@@ -74,74 +74,91 @@ main h2 {
     padding: 20px;
 }
 
-.project {
+.project-card {
     display: block;
+    background-color: var(--bg-color-light);
     padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(185, 185, 185);
 }
 
-.project img {
+.project-card img {
     width: 100%;
     height: auto;
+    padding-bottom: 10px;
 }
 
-.project h1 {
+.project-card h1 {
     font-size: 1.2rem;
     font-weight: 400;
-    padding: 5px 0;
 }
 
-.project a {
+.project-card a {
     color: var(--button-color);
     text-decoration: none;
     padding: 5px 0;
 }
 
-em {
+.project-card em {
     display: block;
     padding: 15px 0;
 }
 
-section img {
+/* Info cards */
+
+.info-element img {
     width: 300px;
     height: auto;
     float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    padding: 0 10px 10px;
 }
 
-.info_element {
-    padding: 50px 50px;
-    background-color: var(--bg-color-light);
-}
-
-.info_element:nth-child(2) {
+.info-element {
+    padding: 50px 30px;
     background-color: var(--bg-color-dark);
 }
 
-.info_element:nth-child(2) img {
-    float: right;
+.info-element:nth-child(2) {
+    background-color: var(--bg-color-light);
 }
 
-/*
+.info-element:nth-child(2) img {
+    float: right;
+    padding: 0 0 10px 10px;
+}
 
+.info-element h1 {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
 
+/* Footer */
 
+footer {
+    background-color: var(--bg-color-footer);
+    color: var(--bg-color-light);
+}
 
+.copyright {
+    padding: 20px;
+    text-align: center;
+}
 
-form {
+/* Contact form */
+
+.contact-form form {
     width: 40%;
     margin: 0 auto;
 }
 
-label {
+.contact-form label {
     display: block;
     width: 100%;
     padding: 20px 0 5px 0;
 }
 
-input,
+.contact-form input,
 textarea {
     display: block;
     width: 100%;
@@ -153,17 +170,17 @@ textarea {
     color: var(--text-dark);
 }
 
-textarea {
+.contact-form textarea {
     height: 150px;
 }
 
-input:focus,
+.contact-form input:focus,
 textarea:focus {
     outline: none !important;
     box-shadow: 0 0 5px #baffd1;
 }
 
-button {
+.contact-form button {
     background-color: var(--button-color);
     color: var(--text-light);
     padding: 15px;
@@ -174,17 +191,8 @@ button {
     font-size: inherit;
 }
 
-.contact-form h2 {
+.contact-form h1 {
+    font-weight: 400;
     padding: 25px;
     text-align: center;
 }
-
-footer {
-    background-color: var(--bg-color-footer);
-    color: var(--bg-color-light);
-}
-
-.copyright {
-    padding: 20px;
-    text-align: center;
-} */
