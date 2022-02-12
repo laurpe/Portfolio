@@ -68,19 +68,26 @@ header h2 {
 
 /* Projects */
 
+.projects-element h1 {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.projects-element {
+    padding: 50px 30px;
+}
+
 .projects {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
 }
 
 .project-card {
-    display: block;
     background-color: var(--bg-color-light);
     padding: 20px;
-    margin: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(185, 185, 185);
+    width: 29vw;
 }
 
 .project-card img {
@@ -147,7 +154,14 @@ footer {
 
 /* Contact form */
 
-.contact-form form {
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+/* .contact-form form {
     width: 40%;
     margin: 0 auto;
 }
@@ -195,4 +209,4 @@ textarea:focus {
     font-weight: 400;
     padding: 25px;
     text-align: center;
-}
+} */
