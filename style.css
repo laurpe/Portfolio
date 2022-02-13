@@ -176,7 +176,7 @@ footer form {
     margin: 10px;
 }
 
-form input,
+footer form input,
 textarea {
     padding: 10px;
     border: none;
@@ -188,7 +188,7 @@ textarea {
     width: 34vw;
 }
 
-form button {
+footer form button {
     background-color: var(--button-color);
     color: var(--text-light);
     padding: 15px;
@@ -201,8 +201,28 @@ form button {
     align-self: center;
 }
 
-form input:focus,
+footer form input:focus,
 textarea:focus {
     outline: none !important;
     box-shadow: 0 0 5px var(--highlight);
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        padding: 20px;
+    }
+
+    .logo {
+        padding: 15px;
+    }
+
+    footer form {
+        width: 60vw;
+    }
+
+    footer form input,
+    textarea {
+        padding: 10px;
+        width: 40vw;
+    }
 }
