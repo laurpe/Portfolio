@@ -207,6 +207,8 @@ textarea:focus {
     box-shadow: 0 0 5px var(--highlight);
 }
 
+/* Medium devices, tablets up to 768 px */
+
 @media (max-width: 768px) {
     nav ul li {
         padding: 20px;
@@ -224,5 +226,97 @@ textarea:focus {
     textarea {
         padding: 10px;
         width: 40vw;
+    }
+}
+
+/* Small devices, phones up to 375 px */
+
+@media (max-width: 375px) {
+    /* Header */
+
+    header {
+        padding: 10px;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header-bottom {
+        padding: 70px;
+    }
+
+    .logo {
+        font-size: 0.8rem;
+    }
+
+    nav ul li {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    /* Projects */
+
+    .projects-element h1 {
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+    .projects-element {
+        padding: 30px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card {
+        background-color: var(--bg-color-light);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(185, 185, 185);
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Info cards */
+
+    .info-element img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .info-element:nth-child(2) img {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    /* Footer */
+
+    footer form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90vw;
+    }
+
+    footer form input,
+    textarea {
+        padding: 10px;
+        width: 60vw;
+    }
+
+    footer form button {
+        margin: 20px 0;
+        width: 50vw;
     }
 }
