@@ -7,6 +7,7 @@
 :root {
     --text-dark: #001808;
     --text-light: white;
+    --highlight: #1eff00;
     --button-color: #038c31;
     --bg-color-light: #ffffff;
     --bg-color-dark: #f3f3f3;
@@ -145,56 +146,48 @@ header h2 {
 footer {
     background-color: var(--bg-color-footer);
     color: var(--bg-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .copyright {
     padding: 20px;
-    text-align: center;
 }
 
 /* Contact form */
 
+footer h1 {
+    font-weight: 400;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+}
+
 .inputs {
     display: flex;
     justify-content: space-between;
-    width: 50vw;
-    margin: 0 auto;
+    margin: 10px;
 }
 
-/* .contact-form form {
-    width: 40%;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    display: block;
-    width: 100%;
-    padding: 20px 0 5px 0;
-}
-
-.contact-form input,
+form input,
 textarea {
-    display: block;
-    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 3px;
     font-family: inherit;
-    font-weight: 200;
+    font-size: inherit;
+    font-weight: inherit;
     color: var(--text-dark);
+    width: 34vw;
 }
 
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form input:focus,
-textarea:focus {
-    outline: none !important;
-    box-shadow: 0 0 5px #baffd1;
-}
-
-.contact-form button {
+form button {
     background-color: var(--button-color);
     color: var(--text-light);
     padding: 15px;
@@ -203,10 +196,20 @@ textarea:focus {
     border-radius: 3px;
     font-family: inherit;
     font-size: inherit;
+    width: 20vw;
+    align-self: center;
 }
 
-.contact-form h1 {
-    font-weight: 400;
-    padding: 25px;
-    text-align: center;
-} */
+form input:focus,
+textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px var(--highlight);
+}
+
+/*
+
+
+
+ */
+
+/*  */
