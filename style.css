@@ -160,9 +160,10 @@ footer {
 footer h1 {
     font-weight: 400;
     padding: 50px;
+    text-align: center;
 }
 
-form {
+footer form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,11 +206,3 @@ textarea:focus {
     outline: none !important;
     box-shadow: 0 0 5px var(--highlight);
 }
-
-/*
-
-
-
- */
-
-/*  */
