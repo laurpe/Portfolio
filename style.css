@@ -67,18 +67,30 @@ header h2 {
     font-weight: 400;
 }
 
-/* Projects */
+/* Content */
 
-.projects-element h1 {
+.content {
+    padding: 50px 30px;
+    background-color: var(--bg-color-dark);
+}
+
+.content:nth-child(even) {
+    background-color: var(--bg-color-light);
+}
+
+.content h2 {
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-.projects-element {
-    padding: 50px 30px;
+/* Projects */
+
+.projects h2 {
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 
-.projects {
+.project-cards {
     display: flex;
     justify-content: space-between;
 }
@@ -113,32 +125,67 @@ header h2 {
     padding: 15px 0;
 }
 
-/* Info cards */
+/* About me section*/
 
-.info-element img {
+.about-me img {
     width: 300px;
     height: auto;
     float: left;
     padding: 0 10px 10px;
 }
 
-.info-element {
-    padding: 50px 30px;
-    background-color: var(--bg-color-dark);
+/* Skills section */
+
+.skill-cards {
+    display: flex;
+    justify-content: space-around;
 }
 
-.info-element:nth-child(2) {
-    background-color: var(--bg-color-light);
+.skill-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 20vh;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(185, 185, 185);
 }
 
-.info-element:nth-child(2) img {
-    float: right;
-    padding: 0 0 10px 10px;
+.skill-card:nth-child(even) {
+    background-color: #fafafa;
 }
 
-.info-element h1 {
-    font-weight: 400;
-    padding-bottom: 20px;
+.skill-card h3 {
+    padding: 20px;
+}
+
+.progress-bar {
+    background-color: rgb(233, 233, 233);
+    width: 70%;
+    height: 15%;
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 5px rgb(207, 207, 207);
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    background-color: #0ec049;
+    border-radius: 3px;
+}
+
+.js {
+    width: 50%;
+}
+
+.css {
+    width: 30%;
+}
+
+.html {
+    width: 50%;
 }
 
 /* Footer */
@@ -157,7 +204,7 @@ footer {
 
 /* Contact form */
 
-footer h1 {
+footer h2 {
     font-weight: 400;
     padding: 50px;
     text-align: center;
@@ -205,6 +252,11 @@ footer form input:focus,
 textarea:focus {
     outline: none !important;
     box-shadow: 0 0 5px var(--highlight);
+}
+
+.copyright h2 {
+    font-weight: 200;
+    font-size: 1rem;
 }
 
 /* Medium devices, tablets up to 768 px */
@@ -257,13 +309,13 @@ textarea:focus {
         font-size: 0.8rem;
     }
 
-    header h1 {
+    header h2 {
         font-size: 3rem;
     }
 
     /* Projects */
 
-    .projects-element h1 {
+    .projects-element h2 {
         font-weight: 400;
         padding-bottom: 20px;
     }

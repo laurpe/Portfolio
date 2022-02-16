@@ -8,6 +8,10 @@
             name="description"
             content="Laura Perttilä's programming portfolio"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,9 +51,9 @@
             </div>
         </header>
         <main>
-            <section class="projects-element">
-                <h1>Projects</h1>
-                <div class="projects">
+            <section class="content">
+                <h2>Projects</h2>
+                <div class="project-cards">
                     <div class="project-card">
                         <img
                             src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_960_720.jpg"
@@ -79,8 +83,8 @@
                     </div>
                 </div>
             </section>
-            <section class="info-element">
-                <h1>About me</h1>
+            <section class="content about-me">
+                <h2>About me</h2>
                 <img
                     src="https://cdn.pixabay.com/photo/2021/01/09/14/04/australian-shepherd-5902417_960_720.jpg"
                     alt="about me"
@@ -116,44 +120,36 @@
                     asperiores excepturi consectetur ea?
                 </p>
             </section>
-            <section class="info-element">
-                <h1>Skills</h1>
-                <img src="https://picsum.photos/id/1082/600/400" alt="skills" />
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Laudantium et quia dicta, expedita quos recusandae
-                    doloremque voluptates voluptas perferendis quis libero. Quae
-                    blanditiis aperiam commodi laboriosam provident harum quasi,
-                    dignissimos aspernatur? Ipsum, vitae veritatis? Hic
-                    accusamus, sunt laboriosam necessitatibus explicabo aperiam
-                    eaque reiciendis harum debitis, omnis recusandae, quod
-                    mollitia tempore provident. Impedit quidem esse id quis
-                    aspernatur eaque harum architecto expedita magni suscipit
-                    illum eveniet quasi, natus nisi, ducimus sint atque
-                    perferendis a possimus maiores ad beatae. At,
-                    necessitatibus. Corporis reiciendis nesciunt tenetur
-                    pariatur voluptas qui ut quisquam sed delectus expedita
-                    commodi voluptates beatae quae vitae eius est dolorum maxime
-                    libero, necessitatibus eum quasi. Nulla odio, amet officia
-                    architecto dolore voluptatum voluptatem a aliquam rerum
-                    dignissimos assumenda repudiandae delectus soluta enim?
-                    Suscipit, officia autem veniam fuga illo enim cum officiis
-                    provident animi rem sunt voluptatibus? Error quas voluptas,
-                    ut nostrum facere exercitationem suscipit, libero, similique
-                    harum officiis temporibus praesentium tempora optio autem
-                    repellat rem maiores. Iure provident ducimus rem eum tenetur
-                    voluptatibus. Non mollitia sunt consequuntur laboriosam,
-                    nulla iusto? Nobis, consequuntur, commodi, voluptas ipsam
-                    error recusandae odit labore qui dolorem explicabo dicta
-                    quasi? Inventore id, esse quo excepturi, aliquid soluta
-                    quasi adipisci iusto dolorem voluptates impedit maiores
-                    temporibus expedita ea.
-                </p>
+            <section class="content">
+                <h2>Skills</h2>
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5 fa-3x"></i>
+                        <h3>HTML</h3>
+                        <div class="progress-bar">
+                            <div class="progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3 fa-3x"></i>
+                        <h3>CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js-square fa-3x"></i>
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
             <section class="contact-form">
-                <h1>Contact me</h1>
+                <h2>Contact me</h2>
                 <form>
                     <div class="inputs">
                         <label for="name">Name</label>
@@ -171,7 +167,7 @@
                 </form>
             </section>
             <section class="copyright">
-                <p>Copyright © Laura Perttilä 2022</p>
+                <h2>Copyright © Laura Perttilä 2022</h2>
             </section>
         </footer>
     </body>
