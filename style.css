@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     color: var(--text-dark);
     background-color: var(--bg-color-dark);
@@ -51,9 +51,21 @@ nav ul li {
     padding: 30px;
 }
 
+/* Header link styling */
+
 header a {
-    color: var(--text-light);
+    background: linear-gradient(to bottom, #0ec049 0%, #0ec049 100%);
+    background-position: right-center;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    color: white;
     text-decoration: none;
+    transition: background-size 0.2s;
+}
+
+header a:hover {
+    background-size: 100% 100%;
+    background-position: left center;
 }
 
 header h1 {
@@ -70,7 +82,7 @@ header h2 {
 /* Content */
 
 .content {
-    padding: 50px 30px;
+    padding: 60px 90px;
     background-color: var(--bg-color-dark);
 }
 
@@ -92,6 +104,7 @@ header h2 {
 
 .project-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -100,7 +113,8 @@ header h2 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(185, 185, 185);
-    width: 29vw;
+    width: 25vw;
+    margin: 10px;
 }
 
 .project-card img {
