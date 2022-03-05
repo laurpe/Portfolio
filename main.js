@@ -1,6 +1,8 @@
 const header = document.querySelector(".header-top");
 const logo = document.querySelector(".logo");
 const backToTopBtn = document.querySelector(".back-to-top");
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector("#btn-mobile");
 
 window.onscroll = () => {
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
@@ -23,3 +25,13 @@ logo.addEventListener("click", () => {
 });
 
 backToTopBtn.addEventListener("click", scrollToTop);
+
+const showMobileMenu = () => {
+    if (nav.classList.contains("responsive")) {
+        nav.classList.remove("responsive");
+    } else {
+        nav.classList.add("responsive");
+    }
+};
+
+menuBtn.addEventListener("click", showMobileMenu);

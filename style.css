@@ -360,13 +360,16 @@ textarea:focus {
     display: none;
 }
 
+#btn-mobile {
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
 /* Medium devices, tablets up to 768 px */
 
 @media (max-width: 768px) {
-    nav ul li {
-        padding: 20px;
-    }
-
     .logo {
         padding: 15px;
     }
@@ -379,6 +382,32 @@ textarea:focus {
     textarea {
         padding: 10px;
         width: 40vw;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    nav.responsive ul {
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        display: block;
+    }
+
+    nav.responsive li {
+        display: block;
+    }
+
+    nav.responsive a {
+        display: block;
+        color: black;
+    }
+
+    nav ul {
+        display: none;
     }
 }
 
