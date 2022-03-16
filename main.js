@@ -29,8 +29,10 @@ backToTopBtn.addEventListener("click", scrollToTop);
 const showMobileMenu = () => {
     if (nav.classList.contains("responsive")) {
         nav.classList.remove("responsive");
+        header.classList.remove("header-top-bg");
     } else {
         nav.classList.add("responsive");
+        header.classList.add("header-top-bg");
     }
 };
 
