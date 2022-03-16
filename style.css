@@ -23,7 +23,6 @@ body {
     font-weight: 200;
     color: var(--text-dark);
     background-color: var(--bg-color-dark);
-    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -153,6 +152,7 @@ header h2 {
 .content {
     padding: 60px 90px;
     background-color: var(--bg-color-dark);
+    scroll-margin-top: 60px;
 }
 
 .content:nth-child(even) {
@@ -173,18 +173,21 @@ header h2 {
 
 .project-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .project-card {
-    flex: 1 1 calc(29% - 1em);
+    flex: 1 0 300px;
     background-color: var(--bg-color-light);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(185, 185, 185);
     margin: 10px;
-    min-width: 300px;
+    min-width: 29%;
+}
+
+.project-card:hover {
+    transform: scale(101%);
 }
 
 .project-card img {
@@ -222,21 +225,27 @@ header h2 {
 
 .skill-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skill-card {
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    min-width: 25vw;
-    max-width: fit-content;
-    height: 20vh;
+    max-width: 350px;
+    min-width: 200px;
+    margin: 10px;
+    height: 200px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(185, 185, 185);
+}
+
+.skill-card:hover {
+    transform: scale(105%);
 }
 
 .skill-card:nth-child(even) {
@@ -267,11 +276,11 @@ header h2 {
 }
 
 .css {
-    width: 30%;
+    width: 40%;
 }
 
 .html {
-    width: 50%;
+    width: 80%;
 }
 
 /* Footer */
@@ -289,6 +298,10 @@ footer {
 }
 
 /* Contact form */
+
+#contact-me {
+    scroll-margin-top: 60px;
+}
 
 footer h2 {
     font-weight: 400;
@@ -433,9 +446,9 @@ textarea:focus {
     grid-row: 9 / 12;
 }
 
-/* Medium devices, tablets up to 768 px */
+/* Medium devices, tablets up to 820 px */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     footer form {
         width: 60vw;
     }
@@ -476,6 +489,10 @@ textarea:focus {
     nav ul {
         display: none;
     }
+
+    .skill-card {
+        max-width: 300px;
+    }
 }
 
 /* Small devices, phones up to 375 px */
@@ -505,49 +522,11 @@ textarea:focus {
         width: 100%;
     }
 
-    /*
-
-    .header-bottom {
-        padding-top: 70px;
-    }
-
-    .logo h2 {
-        font-size: 0.8rem;
-    }
-
-    nav ul li {
-        padding: 10px;
-        font-size: 0.8rem;
-    }
-
-    header h2 {
-        font-size: 3rem;
-    } */
-
     /* Projects */
 
-    /* .projects-element h2 {
-        font-weight: 400;
-        padding-bottom: 20px;
-    }
-
-    .projects-element {
-        padding: 30px;
-    }
-
-    .projects {
-        display: flex;
-        flex-direction: column;
-    }
-
     .project-card {
-        background-color: var(--bg-color-light);
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px rgb(185, 185, 185);
         width: 100%;
-        margin-bottom: 15px;
-    } */
+    }
 
     /* Info cards */
 
@@ -561,6 +540,10 @@ textarea:focus {
     .info-element:nth-child(2) img {
         padding: 0;
         padding-bottom: 20px;
+    }
+
+    .skill-card {
+        width: 100%;
     }
 
     /* Footer */

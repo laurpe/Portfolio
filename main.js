@@ -24,7 +24,9 @@ backToTopBtn.addEventListener("click", scrollToTop);
 const showMobileMenu = () => {
     if (nav.classList.contains("responsive")) {
         nav.classList.remove("responsive");
-        header.classList.remove("header-top-bg");
+        if ((document.body.scrollTop = 0)) {
+            header.classList.remove("header-top-bg");
+        }
     } else {
         nav.classList.add("responsive");
         header.classList.add("header-top-bg");
@@ -32,3 +34,10 @@ const showMobileMenu = () => {
 };
 
 menuBtn.addEventListener("click", showMobileMenu);
+
+const links = document.querySelectorAll("a");
+links.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("responsive");
+    });
+});
