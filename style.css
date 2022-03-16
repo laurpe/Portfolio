@@ -114,28 +114,6 @@ a:hover::before {
     transform: scaleX(1);
 }
 
-/* .border {
-    width: 0;
-    height: 5px;
-    background: var(--button-color);
-    top: 20px;
-    position: absolute;
-}
-
-header a:link {
-    padding: 10px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-}
-
-header a:visited {
-    color: white;
-}
-
-header a:hover {
-} */
-
 header h1 {
     color: var(--text-light);
     font-size: 4.5rem;
@@ -187,7 +165,7 @@ header h2 {
 }
 
 .project-card:hover {
-    transform: scale(101%);
+    transform: scale(1.01, 1.01);
 }
 
 .project-card img {
@@ -245,7 +223,7 @@ header h2 {
 }
 
 .skill-card:hover {
-    transform: scale(105%);
+    transform: scale(1.05, 1.05);
 }
 
 .skill-card:nth-child(even) {
@@ -392,7 +370,7 @@ textarea:focus {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(11, 10vw);
     grid-gap: 10px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .gallery-img {
@@ -444,6 +422,11 @@ textarea:focus {
 .gallery-item-9 {
     grid-column: 6 / 9;
     grid-row: 9 / 12;
+}
+
+.gallery h2 {
+    font-weight: 400;
+    padding: 20px 10px;
 }
 
 /* Medium devices, tablets up to 820 px */
