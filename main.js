@@ -19,11 +19,6 @@ const scrollToTop = () => {
     document.documentElement.scrollTop = 0;
 };
 
-logo.addEventListener("click", () => {
-    scrollToTop();
-    window.location.reload();
-});
-
 backToTopBtn.addEventListener("click", scrollToTop);
 
 const showMobileMenu = () => {
