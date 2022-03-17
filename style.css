@@ -8,7 +8,7 @@
     --text-dark: #001808;
     --text-light: white;
     --highlight: #1eff00;
-    --button-color: #038c31;
+    --color-primary: #038c31;
     --bg-color-light: #ffffff;
     --bg-color-dark: #f3f3f3;
     --bg-color-footer: #2d3435;
@@ -33,7 +33,7 @@ header {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    background-color: var(--button-color);
+    background-color: var(--color-primary);
     height: 50vh;
     position: relative;
 }
@@ -61,7 +61,7 @@ header::after {
 }
 
 .header-top-bg {
-    background-color: var(--button-color);
+    background-color: var(--color-primary);
 }
 
 .header-bottom {
@@ -118,6 +118,16 @@ header h1 {
     color: var(--text-light);
     font-size: 4.5rem;
     font-weight: 400;
+    animation: deepenColor 2s;
+}
+
+@keyframes deepenColor {
+    0% {
+        color: rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        color: var(--text-light);
+    }
 }
 
 header h2 {
@@ -180,7 +190,7 @@ header h2 {
 }
 
 .project-card a {
-    color: var(--button-color);
+    color: var(--color-primary);
     text-decoration: none;
     padding: 5px 0;
 }
@@ -314,7 +324,7 @@ textarea {
 }
 
 footer form button {
-    background-color: var(--button-color);
+    background-color: var(--color-primary);
     color: var(--text-light);
     padding: 15px;
     margin: 20px 0;
@@ -338,7 +348,7 @@ textarea:focus {
 }
 
 .back-to-top {
-    background-color: var(--button-color);
+    background-color: var(--color-primary);
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -377,6 +387,14 @@ textarea:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gallery-item {
+    filter: grayscale(100%);
+}
+
+.gallery-item:hover {
+    filter: none;
 }
 
 .gallery-item-1 {
@@ -450,7 +468,7 @@ textarea:focus {
     }
 
     nav.responsive ul {
-        background-color: var(--button-color);
+        background-color: var(--color-primary);
         position: absolute;
         left: 0;
         top: 100%;
