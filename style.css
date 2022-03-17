@@ -7,7 +7,7 @@
 :root {
     --text-dark: #001808;
     --text-light: white;
-    --highlight: #1eff00;
+    --highlight: #4dc475;
     --color-primary: #248d47;
     --bg-color-light: #ffffff;
     --bg-color-dark: #f3f3f3;
@@ -194,7 +194,6 @@ header h2 {
     text-decoration: none;
     padding: 5px 0;
 }
-
 .project-card em {
     display: block;
     padding: 15px 0;
@@ -255,7 +254,7 @@ header h2 {
 .progress {
     height: 100%;
     width: 50%;
-    background-color: #0ec049;
+    background-color: var(--highlight);
     border-radius: 3px;
 }
 
