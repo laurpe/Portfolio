@@ -8,7 +8,7 @@
     --text-dark: #001808;
     --text-light: white;
     --highlight: #1eff00;
-    --color-primary: #038c31;
+    --color-primary: #248d47;
     --bg-color-light: #ffffff;
     --bg-color-dark: #f3f3f3;
     --bg-color-footer: #2d3435;
@@ -391,6 +391,7 @@ textarea:focus {
 
 .gallery-item {
     filter: grayscale(100%);
+    transition: filter 0.5s;
 }
 
 .gallery-item:hover {
